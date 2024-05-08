@@ -64,11 +64,6 @@ p {
     transition: transform 0.3s ease;
 }
 
-.card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-}
-
 #education {
     text-align: left; 
     padding: 40px 20px; 
@@ -117,15 +112,6 @@ p {
     padding: 40px 20px; /* Consistent padding with other sections */
 }
 
-.card {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
-}
-
-.card img {
-    width: 100%; /* Ensure the image covers the card top area */
-    height: auto; /* Maintain aspect ratio */
-}
-
 footer {
     background-color: #f8f9fa; /* Light grey background, same as the page background for consistency */
     color: #666; /* Grey text color */
@@ -141,3 +127,35 @@ footer a:hover {
     text-decoration: none; /* Optional: removes underline on hover */
 }
 
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth transform for hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight scale up on hover */
+}
+
+.card-img-top {
+    width: 100%; /* Ensure the image covers the card top area */
+    height: 180px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures images cover the area without distorting aspect ratios */
+}
+
+.card-footer {
+    background: inherit;
+    border-top: 0;
+    text-align: center; /* Centers the button in the footer */
+}
+
+.social-links a {
+    margin: 0 10px; /* Adds horizontal spacing between links */
+    color: #007bff; /* Bootstrap primary color for link text */
+    display: inline-block; /* Aligns links inline */
+    vertical-align: middle; /* Centers links vertically relative to each other */
+}
+
+.social-links img {
+    margin-right: 5px; /* Small space between icon and text */
+    vertical-align: middle; /* Aligns the icon with the text vertically */
+}
