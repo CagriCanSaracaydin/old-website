@@ -5,49 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="navbar">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#resume">Resume</a>
-                <a href="#contact">Contact</a>
-            </div>
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="your-photo.jpg" alt="Your Photo" class="profile-image">
+            <h1>Cagri Can Saracaydin</h1>
+            <p>Junior Computer Science and Engineering Student at Sabanci University</p>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
         </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hi, I'm Cagri Can Saracaydin, a software developer...</p>
+    </aside>
+    <div class="main-content">
+        <section id="about" class="parallax" style="background-image: url('about-bg.jpg');">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>Hi, I'm Cagri Can Saracaydin, a passionate software developer with a knack for creating engaging applications...</p>
+            </div>
         </section>
         <section id="projects">
-            <h2>Projects</h2>
-            
-            <div class="project">
-                <h3>Project Title</h3>
-                <p>Project descrp...</p>
-                <a href="project-link.html">Learn More</a>
+            <div class="project-gallery">
+                <!-- Projects will be inserted here using Vue.js -->
             </div>
         </section>
-        <section id="resume">
-            <h2>Resume</h2>
-            <a href="resume.pdf" target="_blank">Download Resume</a>
+        <section id="resume" class="parallax" style="background-image: url('resume-bg.jpg');">
+            <div class="content">
+                <h2>Resume</h2>
+                <a href="resume.pdf" target="_blank">Download Resume</a>
+            </div>
         </section>
         <section id="contact">
             <h2>Contact Me</h2>
-            <form>
+            <form id="contact-form">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message"></textarea>
                 <button type="submit">Send</button>
             </form>
         </section>
-    </main>
-    <footer>
-        <p>© 2024 Cagri Can Saracaydin. All rights reserved.</p>
-    </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
