@@ -1,27 +1,23 @@
+// Initialize AOS library for animations
 document.addEventListener("DOMContentLoaded", function() {
-    const app = Vue.createApp({
-        data() {
-            return {
-                projects: [
-                    { title: 'Project 1', description: 'Description of Project 1', link: 'project1.html' },
-                    { title: 'Project 2', description: 'Description of Project 2', link: 'project2.html' }
-                ]
-            };
-        }
-    }).mount('.project-gallery');
+    AOS.init({
+        offset: 200,           // Offset from element trigger point
+        duration: 600,         // Animation duration
+        easing: 'ease-in-sine', // Animation easing
+        delay: 100,            // Delay animation
+        once: false,           // Whether animation should happen only once
+        mirror: true,          // Whether elements should animate out while scrolling past them
+    });
 
-    AOS.init();
-    const navLinks = document.querySelectorAll('.sidebar-nav a');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const targetSection = document.querySelector(this.getAttribute('href'));
-            if (targetSection) {
-                targetSection.scrollIntoView({ behavior: 'smooth' });
-            } else {
-                console.error("No section found for:", this.getAttribute('href'));
-            }
+    // Smooth scroll for navbar links
+    document.querySelectorAll('a.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            let target = document.getElementById(this.getAttribute('href').substring(1));
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         });
     });
 });

@@ -1,86 +1,108 @@
 body, html {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 90px; /* Adjust based on your navbar height */
     margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    color: #333;
+    background-color: #f8f9fa; /* Light grey background */
 }
 
-.sidebar {
-    position: fixed;
-    width: 250px;
-    height: 100%;
-    background-color: #fff;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+h1, h2, h3, h4, h5, h6 {
+    color: #333; /* Dark grey text for headings */
+    font-weight: 700; /* Bold font weight for headings */
 }
 
-.profile {
-    padding: 20px;
+p {
+    color: #666; /* Lighter grey text for paragraphs */
+    line-height: 1.6; /* Spacing for readability */
+}
+
+
+.navbar {
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+.navbar-nav {
     text-align: center;
+    width: 100%;
 }
 
-.profile-image {
-    width: 100px;
-    height: 100px;
+.nav-link {
+    font-size: 1rem; 
+    color: #555;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #007bff;
+}
+
+#about {
+    text-align: center; 
+    padding: 40px 20px; 
+}
+
+
+#skills .progress {
+    height: 20px; 
+    background-color: #e9ecef; 
+}
+
+.progress-bar {
+    background-color: #007bff; 
+    transition: width 1s ease; 
+}
+
+
+#experience .list-group-item {
+    background-color: #fff; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+}
+
+
+#projects .card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+#education {
+    text-align: left; 
+    padding: 40px 20px; 
+}
+
+#education h1 {
+    margin-bottom: 20px; 
+}
+
+#education ul {
+    padding-left: 0;
+}
+
+#education li {
+    font-size: 1.1rem; 
+    margin-bottom: 10px; 
+    line-height: 1.5; 
+}
+
+#education li strong {
+    color: #333; 
+    font-weight: bold; 
+}
+
+#education li em {
+    color: #666; 
+    font-style: italic; 
+}
+.profile-img {
+    width: 150px; 
+    height: auto; 
     border-radius: 50%;
     margin-bottom: 20px;
-}
-
-.sidebar-nav a {
     display: block;
-    padding: 10px 20px;
-    color: #333;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.sidebar-nav a:hover {
-    background-color: #f0f0f0;
-    color: #000;
-}
-
-.main-content {
-    margin-left: 250px;
-    padding: 20px;
-}
-
-.parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px 20px;
-    min-height: 400px; 
-    background-image: url('images/about-bg.jpg'); 
-}
-.content-section {
-    padding: 50px 20px;
-    margin: 20px 0;
-    background-color: #f8f9fa; 
-    border-radius: 8px;
-}
-
-.content {
-    background-color: rgba(255, 255, 255, 0.9); 
-    padding: 20px;
-    border-radius: 8px; 
-}
-
-.content-section:nth-child(odd) {
-    background-color: #e9ecef;
-}
-
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    .main-content {
-        margin-left: 0;
-    }
-
-    .parallax {
-        background-attachment: scroll;
-    }
-}
