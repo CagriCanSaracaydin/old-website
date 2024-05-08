@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Your Name - Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
     <aside class="sidebar">
         <div class="profile">
             <img src="your-photo.jpg" alt="Your Photo" class="profile-image">
-            <h1>Cagri Can Saracaydin</h1>
-            <p>Junior Computer Science and Engineering Student at Sabanci University</p>
+            <h1>Your Name</h1>
+            <p>Software Engineer</p>
         </div>
         <nav class="sidebar-nav">
             <a href="#about">About</a>
@@ -23,23 +24,23 @@
     </aside>
     <div class="main-content">
         <section id="about" class="parallax" style="background-image: url('about-bg.jpg');">
-            <div class="content">
+            <div class="content" data-aos="fade-up">
                 <h2>About Me</h2>
-                <p>Hi, I'm Cagri Can Saracaydin, a passionate software developer with a knack for creating engaging applications...</p>
+                <p>Hi, I'm [Your Name], a passionate software developer...</p>
             </div>
         </section>
         <section id="projects">
-            <div class="project-gallery">
+            <div class="project-gallery" data-aos="fade-up">
                 <!-- Projects will be inserted here using Vue.js -->
             </div>
         </section>
         <section id="resume" class="parallax" style="background-image: url('resume-bg.jpg');">
-            <div class="content">
+            <div class="content" data-aos="fade-up">
                 <h2>Resume</h2>
                 <a href="resume.pdf" target="_blank">Download Resume</a>
             </div>
         </section>
-        <section id="contact">
+        <section id="contact" data-aos="fade-up">
             <h2>Contact Me</h2>
             <form id="contact-form">
                 <input type="text" placeholder="Your Name" required>
@@ -49,6 +50,7 @@
             </form>
         </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
