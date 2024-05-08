@@ -161,7 +161,7 @@ footer a:hover {
 }
 
 .edu-logo {
-    width: 40px; /* Set appropriate width for the logo */
+    width: 120px; /* Set appropriate width for the logo */
     height: auto; /* Maintain aspect ratio */
     vertical-align: middle; /* Aligns logo with the text vertically */
     margin-right: 10px; /* Space between logo and text */
