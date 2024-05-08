@@ -1,16 +1,15 @@
-import { createApp } from 'vue'; // Import createApp
+import { createApp } from 'https://cdn.jsdelivr.net/npm/vue@next/dist/vue.esm-browser.prod.js';
 
-createApp({ // Create Vue app instance
+createApp({
     data() {
         return {
             projects: [
                 { title: 'Project 1', description: 'Description of Project 1', link: 'project1.html' },
                 { title: 'Project 2', description: 'Description of Project 2', link: 'project2.html' }
-                // Add more projects as needed
             ]
         };
     }
-}).mount('.project-gallery'); // Mount the app to the element with class 'project-gallery'
+}).mount('.project-gallery');
 
 document.addEventListener("DOMContentLoaded", function() {
     AOS.init();
