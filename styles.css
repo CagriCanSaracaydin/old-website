@@ -171,3 +171,43 @@ footer a:hover {
 li {
     margin-bottom: 20px; /* Adds space between entries */
 }
+
+.navbar {
+    transition: background-color 0.5s; /* Smooth transition for background color */
+    background-color: transparent; /* Transparent background initially */
+}
+
+.active-nav {
+    background-color: #fff; /* Solid color after scrolling */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow for depth */
+}
+.nav-link {
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #007bff; /* Highlight color on hover/focus */
+    text-decoration: none; /* No underline */
+}
+.navbar {
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    font-size: 1rem;
+}
+
+.nav-item {
+    margin: 0 10px; /* Spacing between nav items */
+}
+@media (max-width: 992px) {
+    .navbar {
+        background-color: #fff; /* Solid background on smaller screens */
+    }
+
+    .navbar-collapse {
+        text-align: center; /* Center alignment for collapsed items */
+    }
+
+    .nav-item {
+        display: block; /* Stack nav items vertically when collapsed */
+        margin-bottom: 10px; /* Space between items */
+    }
+}

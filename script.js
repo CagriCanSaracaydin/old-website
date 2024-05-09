@@ -21,3 +21,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            document.getElementById('navbar').classList.add('active-nav');
+        } else {
+            document.getElementById('navbar').classList.remove('active-nav');
+        }
+    });
+});
