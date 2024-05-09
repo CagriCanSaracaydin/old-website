@@ -1,15 +1,13 @@
-// Initialize AOS library for animations
 document.addEventListener("DOMContentLoaded", function() {
     AOS.init({
-        offset: 200,           // Offset from element trigger point
-        duration: 600,         // Animation duration
-        easing: 'ease-in-sine', // Animation easing
-        delay: 100,            // Delay animation
-        once: false,           // Whether animation should happen only once
-        mirror: true,          // Whether elements should animate out while scrolling past them
+        offset: 200,          
+        duration: 600,       
+        easing: 'ease-in-sine', 
+        delay: 100,           
+        once: false,          
+        mirror: true,         
     });
 
-    // Smooth scroll for navbar links
     document.querySelectorAll('a.nav-link').forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
