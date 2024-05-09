@@ -227,3 +227,35 @@ li {
     margin: 10px 0; /* Spacing between items */
     font-size: 1.2rem; /* Larger font for better readability */
 }
+
+.experience-logo {
+    width: 100px; /* Ensure the logo is not too large */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between logo and text */
+}
+
+.list-group-item {
+    padding: 20px; /* Adequate padding for readability */
+    border-radius: 5px; /* Soft rounded corners for modern feel */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa; /* Light color on hover for interactive feel */
+}
+
+.list-group-item h5 {
+    margin-bottom: 0; /* Remove bottom margin from heading for tighter spacing */
+}
+
+.list-group-item strong {
+    display: block; /* Ensure company name is on its own line */
+    color: #333; /* Darker color for better readability */
+    font-size: 1rem; /* Larger font size for visibility */
+}
+
+.list-group-item small {
+    font-size: 0.85rem; /* Slightly smaller font size for date */
+    color: #666; /* Lighter grey making it less prominent than company name */
+}
+
