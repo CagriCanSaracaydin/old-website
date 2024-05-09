@@ -211,3 +211,19 @@ li {
         margin-bottom: 10px; /* Space between items */
     }
 }
+
+#contact {
+    padding: 40px 0;
+    background-color: #f8f9fa; /* Light grey background for contrast */
+    text-align: center; /* Center aligning the text and content */
+}
+
+#contact ul {
+    padding: 0;
+    list-style-type: none; /* Removes bullet points */
+}
+
+#contact li {
+    margin: 10px 0; /* Spacing between items */
+    font-size: 1.2rem; /* Larger font for better readability */
+}
