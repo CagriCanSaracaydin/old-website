@@ -2,23 +2,30 @@ body, html {
     font-family: 'Roboto', sans-serif;
     padding-top: 90px;
     margin: 0;
-    background-color: #f8f9fa;
+    background-color: #EEEEEE;
+    color: #333;
+    line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #333;
+    color: #0056b3; 
     font-weight: 700;
 }
 
 p {
     color: #666;
-    line-height: 1.6;
 }
 
-
 .navbar {
-    background-color: #ffffff; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    padding: 0.8rem 2rem;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
 }
 
 .navbar-nav {
@@ -27,205 +34,52 @@ p {
 }
 
 .nav-link {
-    font-size: 1rem; 
-    color: #555;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-link:hover, .nav-link:focus {
-    color: #007bff;
+    color: #0056b3;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 #about {
-    padding-top: 20px; 
+    padding-top: 20px;
     text-align: center;
-    padding: 20px; 
+    padding: 20px;
 }
 
-
-#skills .progress {
-    height: 20px; 
-    background-color: #e9ecef; 
-}
-
-.progress-bar {
-    background-color: #007bff; 
-    transition: width 1s ease; 
-}
-
-
-#experience .list-group-item {
-    background-color: #fff; 
-    border-radius: 5px; 
-    margin-bottom: 10px; 
-}
-
-
-#projects .card {
-    transition: transform 0.3s ease;
-}
-
-#education {
-    text-align: left; 
-    padding: 40px 20px; 
-}
-
-#education h1 {
-    margin-bottom: 20px; 
-}
-
-#education ul {
-    padding-left: 0;
-}
-
-#education li {
-    font-size: 1.1rem; 
-    margin-bottom: 10px; 
-    line-height: 1.5; 
-}
-
-#education li strong {
-    color: #333; 
-    font-weight: bold; 
-}
-
-#education li em {
-    color: #666; 
-    font-style: italic; 
-}
 .profile-img {
     width: 150px;
     height: auto;
-    border-radius: 50%; 
+    border-radius: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     margin-top: -60px;
 }
 
-#resume {
-    text-align: center; 
-    padding: 40px 20px;
+#skills .progress {
+    height: 20px;
+    background-color: #e9ecef;
 }
 
-#certificates {
-    text-align: center; 
-    padding: 40px 20px; 
+.progress-bar {
+    background-image: linear-gradient(45deg, #007bff, #6610f2);
+    transition: width 1s ease;
 }
 
-footer {
-    background-color: #f8f9fa;
-    color: #666;
-    padding: 20px 0;
-    border-top: 1px solid #e7e7e7;
-}
-
-footer a {
-    color: #007bff;
-}
-
-footer a:hover {
-    text-decoration: none;
-}
-
-.card {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card-img-top {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.card-footer {
-    background: inherit;
-    border-top: 0;
-    text-align: center;
-}
-
-.social-links a {
-    margin: 0 10px;
-    color: #007bff;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.social-links img {
-    margin-right: 5px;
-    vertical-align: middle;
-}
-
-.edu-logo {
-    width: 90px;
-    height: auto; 
-    margin-right: 15px; 
-    flex-shrink: 0; 
-}
-
-
-li {
-    margin-bottom: 20px; 
-}
-
-.navbar {
-    transition: background-color 0.5s; 
-    background-color: transparent;
-}
-
-.active-nav {
+#experience .list-group-item {
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.nav-link {
-    transition: color 0.3s;
-}
-
-.nav-link:hover, .nav-link:focus {
-    color: #007bff; 
-    text-decoration: none;
-}
-.navbar {
-    font-family: 'Roboto', sans-serif; 
-    font-size: 1rem;
-}
-
-.nav-item {
-    margin: 0 10px;
-}
-@media (max-width: 992px) {
-    .navbar {
-        background-color: #fff; 
-    }
-
-    .navbar-collapse {
-        text-align: center; 
-    }
-
-    .nav-item {
-        display: block;
-        margin-bottom: 10px;
-    }
-}
-
-#contact {
-    padding: 40px 0;
-    background-color: #f8f9fa;
-    text-align: center;
-}
-
-#contact ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-#contact li {
-    margin: 10px 0;
-    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
 }
 
 .experience-logo {
@@ -259,3 +113,115 @@ li {
     color: #666;
 }
 
+#skills .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s; 
+}
+
+#projects .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s; 
+}
+#certificates .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s; 
+}
+#experience .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-footer {
+    background: inherit;
+    border-top: 0;
+}
+
+#education {
+    text-align: left;
+    padding: 40px 20px;
+}
+
+#education h1 {
+    margin-bottom: 20px;
+}
+
+#education ul {
+    padding-left: 0;
+}
+
+#education li {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+#education li strong, #education li em {
+    color: #333; 
+    font-weight: bold;
+}
+
+.edu-logo {
+    width: 90px;
+    height: auto;
+    margin-right: 15px;
+}
+
+#certificates, #resume, #contact {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#contact {
+    padding: 40px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#contact ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#contact li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #eaeaea;
+    color: #666;
+    padding: 20px 0;
+    border-top: 1px solid #e7e7e7;
+}
+
+footer a {
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        background-color: #fff;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .nav-item {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
