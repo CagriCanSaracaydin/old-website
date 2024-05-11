@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -202,25 +204,30 @@
 
     <section id="education" class="container mt-4">
         <h1>Education</h1>
-        <ul class="list-unstyled">
-            <li class="d-flex align-items-start">
-                <img src="./images/Sabanci_University_logo.png" alt="University 1 Logo" class="edu-logo">
-                <div>
-                    <strong>2021 - 2025</strong> - Bachelor of Science in Computer Science and Engineering
-                    <br>
-                    <em>Sabanci University, Istanbul/Turkey</em>
+        <div class="list-group">
+            <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex align-items-center mb-2">
+                    <img src="./images/Sabanci_University_logo.png" alt="University 1 Logo" class="edu-logo me-3">
+                    <div>
+                        <h5 class="mb-0">Bachelor of Science in Computer Science and Engineering</h5>
+                        <strong>2021 - 2025</strong>
+                        <small class="d-block">Sabanci University, Istanbul/Turkey</small>
+                    </div>
                 </div>
-            </li>
-            <li class="d-flex align-items-start">
-                <img src="./images/Bornova_Anadolu_Lisesi_Logo.png" alt="University 2 Logo" class="edu-logo">
-                <div>
-                    <strong>2016 - 2020</strong> - High School Diploma
-                    <br>
-                    <em>Bornova Anatolian Highschool, Izmir/Turkey</em>
+            </div>
+            <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex align-items-center mb-2">
+                    <img src="./images/Bornova_Anadolu_Lisesi_Logo.png" alt="University 2 Logo" class="edu-logo me-3">
+                    <div>
+                        <h5 class="mb-0">High School Diploma</h5>
+                        <strong>2016 - 2020</strong>
+                        <small class="d-block">Bornova Anatolian Highschool, Izmir/Turkey</small>
+                    </div>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </section>
+    
     
     
 
