@@ -1,3 +1,4 @@
+/* Body and HTML */
 body, html {
     font-family: 'Roboto', sans-serif;
     padding-top: 90px;
@@ -7,6 +8,7 @@ body, html {
     line-height: 1.6;
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
     color: #0056b3; 
     font-weight: 700;
@@ -14,12 +16,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5em; 
 }
 
+/* Paragraphs */
 p {
     color: #666;
     font-size: 1.1em; 
     margin-bottom: 1em; 
 }
 
+/* Navbar */
 .navbar {
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 5px rgba(0,0,0,.1);
@@ -27,6 +31,13 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #0056b3; 
+    text-decoration: none;
 }
 
 .navbar-brand img {
@@ -55,13 +66,7 @@ p {
     text-decoration: underline; 
 }
 
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #0056b3; 
-    text-decoration: none;
-}
-
+/* About Section */
 #about {
     padding-top: 20px;
     text-align: center;
@@ -77,6 +82,7 @@ p {
     margin-top: -60px;
 }
 
+/* Skills Section */
 #skills .progress {
     height: 20px;
     background-color: #e9ecef;
@@ -106,6 +112,7 @@ p {
     text-align: center;
 }
 
+/* Experience Section */
 #experience .list-group-item {
     background-color: #fff;
     border-radius: 5px;
@@ -152,6 +159,7 @@ p {
     margin-top: 5px;
 }
 
+/* Card Styles */
 #skills .card,
 #projects .card,
 #certificates .card,
@@ -178,8 +186,10 @@ p {
 .card-footer {
     background: inherit;
     border-top: 0;
+    text-align: center;
 }
 
+/* Education Section */
 #education {
     text-align: left;
     padding: 40px 20px;
@@ -209,6 +219,7 @@ p {
     margin-right: 15px;
 }
 
+/* Certificates, Resume, Contact Sections */
 #certificates, #resume, #contact {
     text-align: center;
     padding: 40px 20px;
@@ -241,6 +252,7 @@ p {
     text-decoration: underline;
 }
 
+/* Footer */
 footer {
     background-color: #eaeaea;
     color: #666;
@@ -259,6 +271,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Media Queries */
 @media (max-width: 992px) {
     .navbar {
         background-color: #fff;
@@ -277,62 +290,61 @@ footer a:hover {
     }
 }
 
-/* Add a mobile-first approach for responsive design */
 @media (max-width: 576px) {
     body, html {
-        padding-top: 60px; /* Reduce padding on smaller screens */
+        padding-top: 60px;
     }
 
     .navbar {
-        padding: 0.8rem 1rem; /* Reduce padding on smaller screens */
+        padding: 0.8rem 1rem;
     }
 
     .navbar-brand img {
-        height: 30px; /* Reduce logo size on smaller screens */
+        height: 30px;
     }
 
     .navbar-nav {
-        flex-direction: column; /* Stack navigation items vertically on smaller screens */
+        flex-direction: column;
     }
 
     .nav-link {
-        margin: 5px 0; /* Reduce margin between navigation items on smaller screens */
+        margin: 5px 0;
     }
 
     .profile-img {
-        width: 120px; /* Reduce profile image size on smaller screens */
-        margin-top: -40px; /* Adjust profile image position on smaller screens */
+        width: 120px;
+        margin-top: -40px;
     }
 
     .list-group-item {
-        padding: 10px; /* Reduce padding on list items on smaller screens */
+        padding: 10px;
     }
 
     .list-group-item h5 {
-        font-size: 1rem; /* Reduce heading size on smaller screens */
+        font-size: 1rem;
     }
 
     .list-group-item strong {
-        font-size: 0.9rem; /* Reduce text size on smaller screens */
+        font-size: 0.9rem;
     }
 
     .list-group-item small {
-        font-size: 0.8rem; /* Reduce text size on smaller screens */
+        font-size: 0.8rem;
     }
 
     .card-img-top {
-        height: 150px; /* Reduce image height on smaller screens */
+        height: 150px;
     }
 
     #education h1 {
-        font-size: 1.5rem; /* Reduce heading size on smaller screens */
+        font-size: 1.5rem;
     }
 
     .edu-logo {
-        width: 70px; /* Reduce logo size on smaller screens */
+        width: 70px;
     }
 
     #contact li {
-        font-size: 1rem; /* Reduce text size on smaller screens */
+        font-size: 1rem;
     }
 }
