@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
     AOS.init({
         offset: 200,          
         duration: 600,       
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.querySelectorAll('a.nav-link').forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', (e) => {
             e.preventDefault();
             let target = document.getElementById(this.getAttribute('href').substring(1));
             target.scrollIntoView({
@@ -19,8 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-document.addEventListener("DOMContentLoaded", function() {
-    window.addEventListener('scroll', function() {
+
+document.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             document.getElementById('navbar').classList.add('active-nav');
         } else {
