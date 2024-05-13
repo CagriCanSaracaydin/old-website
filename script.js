@@ -18,9 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
-});
 
-document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             document.getElementById('navbar').classList.add('active-nav');

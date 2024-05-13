@@ -169,50 +169,48 @@ section {
 }
 
 /* Experience Section */
-#experience .list-group-item {
+#experience .card {
     background-color: #fff;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: flex;
-    align-items: center;
-    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#experience .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .experience-logo {
-    width: 100px;
-    height: auto; 
+    width: 250px;
+    height: auto;
     margin-right: 15px;
+    border-radius: 10px;
 }
 
-.list-group-item {
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.card-body {
     padding: 20px;
-    display: flex;
-    align-items: center;
 }
 
-.list-group-item:hover {
-    background-color: #f8f9fa;
+.card-title {
+    font-size: 1.5rem;
+    color: #0056b3;
 }
 
-.list-group-item h5 {
-    margin-bottom: 0;
-    font-size: 1.2rem;
+.card-text {
+    font-size: 1rem;
+    color: #333;
 }
 
-.list-group-item strong {
-    display: block; 
-    color: #333; 
-    font-size: 1rem; 
-}
-
-.list-group-item small {
-    font-size: 0.85rem;
+.card-text strong {
+    display: block;
+    margin-bottom: 5px;
     color: #666;
-    margin-top: 5px;
+}
+
+.card-text small {
+    color: #999;
 }
 
 /* Card Styles */
@@ -262,32 +260,66 @@ section {
     padding: 40px 20px;
 }
 
-#education h1 {
+#education .card {
+    background-color: #fff;
+    border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
-#education ul {
-    padding-left: 0;
-}
-
-#education li {
-    font-size: 1.1rem;
-    line-height: 1.5;
-}
-
-#education li strong, #education li em {
-    color: #333; 
-    font-weight: bold;
+#education .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .edu-logo {
-    width: 90px;
+    width: 180px;
     height: auto;
     margin-right: 15px;
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #0056b3;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+.card-text strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.card-text small {
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    #education .edu-logo {
+        width: 120px;
+    }
+
+    #education .card-title {
+        font-size: 1.2rem;
+    }
+
+    #education .card-text {
+        font-size: 0.9rem;
+    }
 }
 
 /* Certificates, Resume, Contact Sections */
-#certificates, #resume, #contact {
+#certificates, #resume, #contact, #education, #projects, #skills {
     text-align: center;
     padding: 40px 20px;
 }
