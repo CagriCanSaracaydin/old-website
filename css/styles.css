@@ -1,6 +1,26 @@
+/* Variables */
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #343a40;
+    --accent-color: #ffc107;
+    --font-family: 'Roboto', sans-serif;
+    --font-size-base: 16px;
+    --transition-speed: 0.3s;
+}
+
+/* Global Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 /* General Styles */
 body, html {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     padding-top: 70px;
     margin: 0;
     background-color: #EEEEEE; 
@@ -11,7 +31,7 @@ body, html {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    color: #0056b3; 
+    color: var(--primary-color); 
     font-weight: 700;
     text-transform: uppercase; 
     margin-bottom: 0.5em; 
@@ -29,7 +49,7 @@ p {
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 5px rgba(0,0,0,.1);
     padding: 0.8rem 2rem;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +58,7 @@ p {
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5em;
-    color: #0056b3; 
+    color: var(--primary-color); 
     text-decoration: none;
 }
 
@@ -57,14 +77,14 @@ p {
 .nav-link {
     font-size: 1.1em;
     font-weight: bold;
-    transition: color 0.3s;
-    color: #0056b3;
+    transition: color var(--transition-speed);
+    color: var(--primary-color);
     margin: 0 10px;
     text-decoration: none;
 }
 
 .nav-link:hover, .nav-link:focus {
-    color: #0056b3;
+    color: var(--primary-color);
     text-decoration: underline; 
 }
 
@@ -73,7 +93,7 @@ p {
 }
 
 .navbar.active-nav {
-    background-color: #0056b3;
+    background-color: var(--primary-color);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -90,10 +110,10 @@ p {
 .profile-img {
     width: 150px;
     height: auto;
-    border: 5px solid #0056b3;
+    border: 5px solid var(--primary-color);
     display: block;
     margin: auto;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
 }
 
 .profile-img:hover {
@@ -102,7 +122,7 @@ p {
 }
 
 .social-links .btn-link {
-    transition: transform 0.3s;
+    transition: transform var(--transition-speed);
 }
 
 .social-links .btn-link:hover {
@@ -116,7 +136,7 @@ p {
 }
 
 h1 {
-    color: #0056b3;
+    color: var(--primary-color);
     font-size: 2.5rem;
 }
 
@@ -144,7 +164,7 @@ section {
     background-image: linear-gradient(45deg, #007bff, #6610f2);
     transition: width 0.5s ease;
     border-radius: 10px;
-    background-color: #0056b3;
+    background-color: var(--primary-color);
     transition: width 0.6s ease;
 }
 
@@ -174,12 +194,12 @@ section {
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform var(--transition-speed);
 }
 
 #experience .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px var(--font-size-base) rgba(0, 0, 0, 0.2);
 }
 
 .experience-logo {
@@ -195,7 +215,7 @@ section {
 
 .card-title {
     font-size: 1.5rem;
-    color: #0056b3;
+    color: var(--primary-color);
 }
 
 .card-text {
@@ -219,7 +239,7 @@ section {
 #certificates .card,
 #experience .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform var(--transition-speed);
     border: none;
     border-radius: 10px;
     overflow: hidden;
@@ -227,7 +247,7 @@ section {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px var(--font-size-base) rgba(0, 0, 0, 0.1);
 }
 
 .card-img-top {
@@ -251,7 +271,7 @@ section {
 
 .card-title {
     font-weight: bold;
-    color: #0056b3;
+    color: var(--primary-color);
 }
 
 /* Education Section */
@@ -265,12 +285,12 @@ section {
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform var(--transition-speed);
 }
 
 #education .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px var(--font-size-base) rgba(0, 0, 0, 0.2);
 }
 
 .edu-logo {
@@ -286,7 +306,7 @@ section {
 
 .card-title {
     font-size: 1.5rem;
-    color: #0056b3;
+    color: var(--primary-color);
 }
 
 .card-text {
@@ -343,7 +363,7 @@ section {
 
 #contact a {
     color: #007bff;
-    transition: color 0.3s;
+    transition: color var(--transition-speed);
     text-decoration: none;
 }
 
@@ -362,9 +382,9 @@ footer {
 
 footer a {
     color: #007bff;
-    transition: color 0.3s;
+    transition: color var(--transition-speed);
     text-decoration: none;
-    background-color: #f8f9fa;
+    background-color: var(--background-color);
     padding: 1rem 0;
 }
 
@@ -373,7 +393,7 @@ footer a:hover {
 }
 
 footer p a {
-    color: #0056b3;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
