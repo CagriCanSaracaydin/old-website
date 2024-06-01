@@ -5,9 +5,10 @@
     --background-color: #f8f9fa;
     --text-color: #343a40;
     --accent-color: #ffc107;
-    --font-family: 'Roboto', sans-serif;
+    --font-family: "Roboto", sans-serif;
     --font-size-base: 16px;
     --transition-speed: 0.4s;
+    --bs-progress-width: 75%;
 }
 
 /* Global Styles */
@@ -19,37 +20,44 @@
     padding: 0;
 }
 /* General Styles */
-body, html {
+body,
+html {
     font-family: var(--font-family);
     padding-top: 70px;
     margin: 0;
-    background-color: #EEEEEE; 
+    background-color: #eeeeee;
     color: #333;
     line-height: 1.6;
     scroll-behavior: smooth;
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color); 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
     font-weight: 700;
-    text-transform: uppercase; 
-    margin-bottom: 0.5em; 
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
 }
 
 /* Paragraphs */
 p {
     color: #666;
-    font-size: 1.1em; 
-    margin-bottom: 1em; 
+    font-size: 1.1em;
+    margin-bottom: 1em;
 }
 
 /* Navbar */
 .navbar {
     background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 0.8rem 2rem;
-    transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+    transition: background-color var(--transition-speed),
+    box-shadow var(--transition-speed);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +66,7 @@ p {
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5em;
-    color: var(--primary-color); 
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -83,12 +91,14 @@ p {
     text-decoration: none;
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover,
+.nav-link:focus {
     color: var(--primary-color);
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: #003d82;
 }
 
@@ -113,7 +123,8 @@ p {
     border: 5px solid var(--primary-color);
     display: block;
     margin: auto;
-    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    transition: transform var(--transition-speed),
+    box-shadow var(--transition-speed);
 }
 
 .profile-img:hover {
@@ -162,7 +173,6 @@ section {
 
 .progress-bar {
     background-image: linear-gradient(50deg, #007bff, #6610f2);
-    transition: width 0.5s ease;
     border-radius: 15px; /* Increased border radius */
     background-color: var(--primary-color);
     transition: width 0.6s ease;
@@ -327,14 +337,19 @@ section {
 }
 
 /* Certificates, Resume, Contact Sections */
-#certificates, #resume, #contact, #education, #projects, #skills {
+#certificates,
+#resume,
+#contact,
+#education,
+#projects,
+#skills {
     text-align: center;
     padding: 40px 20px;
 }
 
 #contact {
     padding: 40px 0;
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
     text-align: center;
 }
 
@@ -361,11 +376,11 @@ section {
 
 /* Footer */
 footer {
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
     color: #666;
     padding: 20px 0;
-    border-top: 1px solid #EEEEEE;
-    text-align: center; 
+    border-top: 1px solid #eeeeee;
+    text-align: center;
 }
 
 footer a {
@@ -409,7 +424,8 @@ footer p a:hover {
 }
 
 @media (max-width: 576px) {
-    body, html {
+    body,
+    html {
         padding-top: 60px;
     }
 
