@@ -23,7 +23,7 @@
 body,
 html {
     font-family: var(--font-family);
-    padding-top: 70px;
+    padding-top: 50px;
     margin: 0;
     background-color: #eeeeee;
     color: #333;
@@ -232,6 +232,7 @@ section {
 }
 
 /* Card Styles */
+#about .card,
 #skills .card,
 #projects .card,
 #certificates .card,
